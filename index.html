@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html >
+  <head>
+    <meta charset="UTF-8">
+    <title>JavaScript Calculator</title>
+    
+    
+    
+    
+        <link rel="stylesheet" href="css/style.css">
+
+    
+    
+    
+  </head>
+
+  <body>
+
+    <div id="main">
+  <div id="calc" class="arrange-vertically">
+    <p>&nbsp;</p>
+    <div id="name"><h1>Electronic Calculator</h1></div>
+    <div class="screen arrange-vertically">
+      <div id='result'>0</div>
+      <HR SIZE="1" style="width: 99%;margin: auto;">
+        <div id='history'>0</div>
+    </div>
+		<div id="lines" class="arrange-vertically">
+			<div id="line1-3" class="margin-t-b">
+				<div id="line1" class="arrange-horizontally">
+					<button type="button" id="AC" onclick="clean_calc()">AC</button>
+					<button type="button" id="CE" onclick="clean_calc()">CE</button>
+					<button type="button" id="divide" onclick="insert('/')">/</button>
+					<button type="button" id="mul" onclick="insert('*')">x</button>
+				</div>
+				<div id="line2" class="arrange-horizontally">
+					<button type="button" id="seven-d" onclick="insert('7')">7</button>
+					<button type="button" id="eight-d" onclick="insert('8')">8</button>
+					<button type="button" id="nine-d" onclick="insert('9')">9</button>
+					<button type="button" id="sub" onclick="insert('-')">-</button>
+				</div>
+				<div id="line3" class="arrange-horizontally">
+					<button type="button" id="four-d" onclick="insert('4')">4</button>
+					<button type="button" id="five-d" onclick="insert('5')">5</button>
+					<button type="button" id="six-d" onclick="insert('6')">6</button>
+					<button type="button" id="add" onclick="insert('+')">+</button>
+				</div>
+			</div>
+			<div class="arrange-horizontally">
+				<div class="arrange-vertically">
+					<div id="line4" class="arrange-horizontally">
+						<button type="button" id="one-d" onclick="insert('1')">1</button>
+						<button type="button" id="two-d" onclick="insert('2')">2</button>
+						<button type="button" id="three-d" onclick="insert('3')">3</button>
+					</div>
+					<div id="line5" class="arrange-horizontally">
+						<button type="button" id="zero" onclick = "insert('0');">0</button>
+						<button type="button" id="dot" onclick="insert('.')">.</button>
+					</div>
+				</div>
+				<div style="position: relative;top: -27px;">
+					<button type="button" id="equal" onclick="calculate()">=</button>
+				</div>
+			</div>
+		</div>
+  </div>
+  <p>&nbsp;</p>
+  <p>&nbsp;</p>
+  <HR SIZE="3" style="width: 350px;margin: auto;">
+    <p style="margin: auto; text-align: center; font-family: Comic Sans MS">Written and coded by <a href="https://www.freecodecamp.com/mograbi" target="_blank">Moawiya Mograbi</a>.<p>
+</div>
+    
+        <script src="js/index.js"></script>
+
+    
+    
+    
+  </body>
+</html>
